@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: a9a5b41735cdb37e0dcb878eb25dcdf6174412cd
+  specs:
+    twitter-bootstrap-rails (4.0.0)
+      actionpack (>= 5.0, < 7.0)
+      execjs (~> 2.7)
+      less-rails (>= 3.0, < 5.0)
+      railties (>= 5.0, < 7.0)
+
+GIT
   remote: https://github.com/tcocca/acts_as_follower.git
   revision: c5ac7b9601c4af01eb4d9112330b27be4d694ecc
   branch: master
@@ -99,6 +109,7 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    commonjs (0.2.7)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     devise (4.7.1)
@@ -114,6 +125,7 @@ GEM
       activesupport (>= 5.0)
       request_store (>= 1.0)
     erubi (1.9.0)
+    execjs (2.7.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.12.2)
@@ -153,6 +165,12 @@ GEM
       activerecord
       kaminari-core (= 1.2.0)
     kaminari-core (1.2.0)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (4.0.0)
+      actionpack (>= 4)
+      less (~> 2.6.0)
+      sprockets (>= 2)
     loofah (2.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -319,6 +337,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   turbolinks (~> 5)
+  twitter-bootstrap-rails!
   tzinfo-data
   web-console (>= 3.3.0)
   webdrivers

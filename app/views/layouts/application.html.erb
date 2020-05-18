@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SpotifyOnRails</title>
+    <title>NewsOnRails</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
 
@@ -15,7 +17,7 @@
 
 
         <div class="sidebar"> 
-          <h3>SPUTIFY</h3>
+          <h3>Novice</h3>
           <div style="display: flex; flex-direction: column; padding-left: 29px" >
 
             <%= form_tag search_index_url, :method => 'get' do %>
