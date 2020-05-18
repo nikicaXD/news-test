@@ -1,0 +1,6 @@
+<% url = (image.attached?) ? url_for(image) : image_url("default.png") %>
+<% if (!url || url == '(unknown)') %>
+    <% url = image_url("default.png") %>
+<% end  %>
+
+<img style="max-width: <%=( size ? size.to_s : '120')%>px" src="<%= url%>" >

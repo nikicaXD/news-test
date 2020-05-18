@@ -1,0 +1,20 @@
+<div class="sor-card" >
+    <div style="margin-right: 12px"> 
+        <%= link_to  profile_path(artist) do %>
+            <%= render 'components/image', image: artist.avatar, size: 150 %>
+        <% end %>
+    </div>
+    <div>
+        <p> <%= artist.name %></p> 
+        <p> <%= artist.followers_count %> Followers</p> 
+        <% if artist != current_user %>
+            <%= form_tag (current_user.following?(artist) ? unfollow_url(artist) : follow_url(artist) ), :method => 'post' do %>
+                    <%= button_tag :submit do %>
+                      <i class='uil uil-search'>
+                        <%= current_user.following?(artist) ? 'Unfollow' : 'Follow' %>
+                      </i>
+                    <% end %>
+                <% end %>
+        <% end %>
+    </div>
+</div>

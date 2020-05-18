@@ -1,0 +1,23 @@
+<div class="home" >
+
+    <div style="amax-width: 400px; display: flex; flex-direction: row" >
+    
+        <div>
+            <h2>Latest albums</h2>
+            <div style="display: flex; flex-direction: column-reverse" >
+            <% @latestAlbums.each do |a| %>
+                <%= render 'components/albumCard', album: a %>
+            <% end %>
+            </div>
+        </div>
+
+        <div>
+            <h2>Latest artists</h2>
+            <div style="display: flex; flex-direction: column-reverse" >
+                <% @latestArtists.each do |a| %>
+                    <%= render 'components/artistCard', artist: a %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

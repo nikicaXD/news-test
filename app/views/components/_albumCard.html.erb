@@ -1,0 +1,15 @@
+<div class="sor-card" >
+    <div style="margin-right: 12px"> 
+        <%= link_to   album_path(album) do %>
+            <%= render 'components/image', image: album.cover, size: 150 %>
+        <% end %>
+    </div>
+    <div>
+        <p> <%= album.title %>,  <%= link_to album.user.name , profile_path(album.user) %> </p>
+        <p> <%= album.genre.name %>  </p>
+        <%= link_to 'View', album_path(album) %></td>
+        <% if album.user == current_user %>
+            <%= link_to 'Edit', edit_album_path(album) %></td>
+        <% end  %>
+    </div>
+</div>

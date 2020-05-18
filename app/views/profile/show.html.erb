@@ -1,0 +1,30 @@
+
+
+<div style="display: flex; flex-direction: row; padding: 20px 12px;" >
+    <%= render 'components/image', image: @user.avatar, size: 150 %>
+    <div style=" margin-left: 15px">
+        <div style="font-size: 42px;"><%= @user.name %></div>
+        <div style=""> <%= @user.followers_count %> Followers</div>
+        
+        <% if @user != current_user %>
+            <%= form_tag (current_user.following?(@user) ? unfollow_url : follow_url ), :method => 'post' do %>
+                <%= button_tag :submit do %>
+                    <i class='uil uil-search'>
+                    <%= current_user.following?(@user) ? 'Unfollow' : 'Follow' %>
+                    </i>
+                <% end %>
+            <% end %>
+        <% end %>
+
+        <% if @user == current_user %>
+            <%= link_to 'Edit', edit_user_registration_path %>
+        <% end %>
+    </div>
+</div>
+
+<h2>Latest albums</h2>
+    <div style="display: flex; flex-direction: column-reverse" >
+    <% @user.albums.each do |a| %>
+        <%= render 'components/albumCard', album: a %>
+    <% end %>
+</div>

@@ -1,0 +1,37 @@
+<%= form_with(model: song, local: true) do |form| %>
+  <% if song.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(song.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+      <ul>
+        <% song.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, required: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.number_field :position, min: 1, value: 1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Song file" %>
+    <%= form.file_field :mp3, required: true, accept: '.mp3,audio'  %>
+  </div>
+
+
+  <div class="field" style="display: none" >
+    <%= form.text_field :album_id,  value: @album_id, required: true  %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
