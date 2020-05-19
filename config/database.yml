@@ -105,3 +105,12 @@ development:
   username: postgres
   password: changeme
   host: 10.0.1.2
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: posts
+  pool: 5
+  username: postgres
+  password: changeme
+  host: 10.0.1.2
