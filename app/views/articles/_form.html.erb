@@ -22,6 +22,11 @@
   </div>
 
   <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description, required: true  %>
+    </div>
+
+  <div class="field">
     <%= form.label "Article cover" %>
     <%= form.file_field :cover, required: true %>
   </div>

@@ -3,7 +3,7 @@
 
 <div><%= @article.title %></div>
 <%= render 'components/image', image: @article.cover, size: 150 %>
-
+<div><%= @article.description %></div>
 <div></div>
 <% if @article.user == current_user %>
     <%= link_to '+ post', articlepost_path(@article.id) %>
@@ -14,7 +14,7 @@
     <tr>
         <td><%= s.position %> </td>
         <td><%= s.title %> </td>
-        <td> <button onClick="play('<%= url_for(s.mp3) %>')">PLAY </button> </td>
+
     </tr>
 <% end %>
 </table>

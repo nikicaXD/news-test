@@ -37,17 +37,13 @@
 
 
             <div style="height: 28px" ></div>
-                <%= link_to "+ ALBUM", '/articles/new' %>
+                <%= link_to "+ ARTICLE", '/articles/new' %>
             <% end %> 
           </div>
 
           <div>
-            <div id="sputify-player-container" style="position: absolute; bottom: 0; max-height: 54px; "  data-turbolinks-permanent>
-              <audio id="sputify-player" controls src="" style="background-color: #f0f0f0;">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
+
+                    </div>
         </div>
 
         
@@ -58,63 +54,6 @@
             <%= yield %>
         </div>
 
-        <script>
-            ;(function () {
-            var forEach = Array.prototype.forEach
-            var selector = [
-              '[data-turbolinks-permanent] audio',
-              'audio[data-turbolinks-permanent]',
-              '[data-turbolinks-permanent] video',
-              'video[data-turbolinks-permanent]'
-            ].join(',')
 
-            addEventListener('turbolinks:load', function () {
-              var mediaElements = document.querySelectorAll(selector)
-              forEach.call(mediaElements, uninterrupt)
-            })
-
-            // Bind to turbolinks:render to handle previews
-            addEventListener('turbolinks:render', function () {
-              var mediaElements = document.querySelectorAll(selector)
-              forEach.call(mediaElements, function (media) {
-                if (media.isPlaying) media.play()
-              })
-            })
-
-            function uninterrupt (media) {
-              if (!media.uninterrupted) {
-                media.addEventListener('play', function () { media.isPlaying = true })
-                media.addEventListener('pause', function () { media.isPlaying = false })
-                media.uninterrupted = true
-              }
-            }
-          })()
-        </script>
-
-        
-        <script>
-            function play(post) {
-                // alert(post)
-                let player = document.getElementById('sputify-player');
-                player.src = post
-                player.play();
-            }
-        </script>
-
-        <script>
-          // Ty plazo
-          (function(){
-            const notice = document.getElementById('notice');
-            const alert = document.getElementById('alert');
-
-            notice.click(() => {
-              notice.hide();
-            })
-
-            alert.click(() => {
-              alert.hide();
-            })
-          }());
-        </script>
   </body>
 </html>

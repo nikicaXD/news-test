@@ -21,11 +21,6 @@
     <%= form.number_field :position, min: 1, value: 1 %>
   </div>
 
-  <div class="field">
-    <%= form.label "Post file" %>
-    <%= form.file_field :mp3, required: true, accept: '.mp3,audio'  %>
-  </div>
-
 
   <div class="field" style="display: none" >
     <%= form.text_field :article_id,  value: @article_id, required: true  %>
