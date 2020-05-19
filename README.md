@@ -1,18 +1,19 @@
-## Sputify
+## News
 
-Sputify - a cheap Rails clone of Spotify. Share and Play music. Yay!
+## required
+instaliran mora bit docker in docker composer
 
-![Sputify front page](https://i.imgur.com/LRrYIrJ.png)
+## zagon dockerja
+  * buildanje:
+  `docker-compose build`
+  * ZAGON DOCKERJA  `docker-compose run --rm --service-ports ruby_dev`
 
-## Features
-- Upload and play music
-- Follow artists
-- Find new artists and music
-- Search for specific artists and music
-- Facebook authentication 
+## uporaba
+V terminalu potem napiše
+ * za kreiranje novega projekta `rails new myapp && cd myapp`
+  * za zagon serverja `rails server -p 3000 -b 0.0.0.0`
 
-## Setup
-> 1. Download the project</br>
-> 2. Execute ```bundle```</br>
-> 2. Execute: ```rake db:create```</br>
-> 5. Execute: ```rails s```
+## POVEZAVE 
+  * [ruby](https://www.freecodecamp.org/news/painless-rails-development-environment-setu$
+
+
