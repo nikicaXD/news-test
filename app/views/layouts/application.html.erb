@@ -37,7 +37,7 @@
 
 
             <div style="height: 28px" ></div>
-                <%= link_to "+ ALBUM", '/albums/new' %>
+                <%= link_to "+ ALBUM", '/articles/new' %>
             <% end %> 
           </div>
 
@@ -93,10 +93,10 @@
 
         
         <script>
-            function play(song) {
-                // alert(song)
+            function play(post) {
+                // alert(post)
                 let player = document.getElementById('sputify-player');
-                player.src = song
+                player.src = post
                 player.play();
             }
         </script>

@@ -7,8 +7,8 @@ class User < ApplicationRecord
     
     has_one_attached :avatar
 
-    has_many :albums
-    has_many :songs
+    has_many :articles
+    has_many :posts
 
     acts_as_followable
     acts_as_follower

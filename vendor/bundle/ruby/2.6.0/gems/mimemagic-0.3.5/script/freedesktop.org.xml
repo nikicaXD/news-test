@@ -21852,14 +21852,14 @@
     <comment xml:lang="hr">Prazan dokument</comment>
     <comment xml:lang="hu">üres dokumentum</comment>
     <comment xml:lang="ia">Documento vacue</comment>
-    <comment xml:lang="id">dokumen kosong</comment>
+    <comment xml:lang="id">dokumen kopost</comment>
     <comment xml:lang="it">Documento vuoto</comment>
     <comment xml:lang="ja">空のドキュメント</comment>
     <comment xml:lang="kk">бос құжат</comment>
     <comment xml:lang="ko">빈 문서</comment>
     <comment xml:lang="lt">tuščias dokumentas</comment>
     <comment xml:lang="lv">tukšs dokuments</comment>
-    <comment xml:lang="ms">Dokumen kosong</comment>
+    <comment xml:lang="ms">Dokumen kopost</comment>
     <comment xml:lang="nb">tomt dokument</comment>
     <comment xml:lang="nl">leeg document</comment>
     <comment xml:lang="nn">tomt dokument</comment>
@@ -40067,7 +40067,7 @@
     <comment xml:lang="hr">Prazni CD disk</comment>
     <comment xml:lang="hu">üres CD-lemez</comment>
     <comment xml:lang="ia">Disco CD vacue</comment>
-    <comment xml:lang="id">cakram CD kosong</comment>
+    <comment xml:lang="id">cakram CD kopost</comment>
     <comment xml:lang="it">Disco vuoto CD</comment>
     <comment xml:lang="ja">ブランク CD ディスク</comment>
     <comment xml:lang="kk">таза CD дискі</comment>
@@ -40117,7 +40117,7 @@
     <comment xml:lang="hr">Prazni DVD disk</comment>
     <comment xml:lang="hu">üres DVD-lemez</comment>
     <comment xml:lang="ia">Disco DVD vacue</comment>
-    <comment xml:lang="id">cakram DVD kosong</comment>
+    <comment xml:lang="id">cakram DVD kopost</comment>
     <comment xml:lang="it">Disco vuoto DVD</comment>
     <comment xml:lang="ja">ブランク DVD ディスク</comment>
     <comment xml:lang="kk">таза DVD дискі</comment>
@@ -40167,7 +40167,7 @@
     <comment xml:lang="hr">Prazni Blu-ray disk</comment>
     <comment xml:lang="hu">üres Blu-Ray lemez</comment>
     <comment xml:lang="ia">Disco Bly-ray vacue</comment>
-    <comment xml:lang="id">cakram Blu-ray kosong</comment>
+    <comment xml:lang="id">cakram Blu-ray kopost</comment>
     <comment xml:lang="it">Disco vuoto Blu-ray</comment>
     <comment xml:lang="ja">ブランク Blu-ray ディスク</comment>
     <comment xml:lang="kk">таза Blu-ray дискі</comment>
@@ -40217,7 +40217,7 @@
     <comment xml:lang="hr">Prazni HD DVD disk</comment>
     <comment xml:lang="hu">üres HD DVD-lemez</comment>
     <comment xml:lang="ia">Disco HD DVD vacue</comment>
-    <comment xml:lang="id">cakram HD DVD kosong</comment>
+    <comment xml:lang="id">cakram HD DVD kopost</comment>
     <comment xml:lang="it">Disco vuoto DVD HD</comment>
     <comment xml:lang="ja">ブランク HD DVD ディスク</comment>
     <comment xml:lang="kk">таза HD DVD дискі</comment>

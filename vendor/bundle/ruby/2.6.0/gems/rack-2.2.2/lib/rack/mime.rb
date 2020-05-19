@@ -187,7 +187,7 @@ module Rack
       ".exe"       => "application/x-msdownload",
       ".ext"       => "application/vnd.novadigm.ext",
       ".ez"        => "application/andrew-inset",
-      ".ez2"       => "application/vnd.ezpix-album",
+      ".ez2"       => "application/vnd.ezpix-article",
       ".ez3"       => "application/vnd.ezpix-package",
       ".f"         => "text/x-fortran",
       ".f77"       => "text/x-fortran",

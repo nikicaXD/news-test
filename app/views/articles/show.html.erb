@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 
-<div><%= @album.title %></div>
-<%= render 'components/image', image: @album.cover, size: 150 %>
+<div><%= @article.title %></div>
+<%= render 'components/image', image: @article.cover, size: 150 %>
 
 <div></div>
-<% if @album.user == current_user %>
-    <%= link_to '+ song', albumsong_path(@album.id) %>
+<% if @article.user == current_user %>
+    <%= link_to '+ post', articlepost_path(@article.id) %>
 <% end %>
 
 <table>
-<% @album.songs.sort_by{|u| u.position}.each do |s| %>
+<% @article.posts.sort_by{|u| u.position}.each do |s| %>
     <tr>
         <td><%= s.position %> </td>
         <td><%= s.title %> </td>

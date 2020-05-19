@@ -202,7 +202,7 @@ qam         application/vnd.epson.quickanime                                    
 slt         application/vnd.epson.salt                                                base64          
 ssf         application/vnd.epson.ssf                                                 base64          
 es3         application/vnd.eszigno3+xml                                              base64          
-ez2         application/vnd.ezpix-album                                               base64          
+ez2         application/vnd.ezpix-article                                               base64
 ez3         application/vnd.ezpix-package                                             base64          
 fdf         application/vnd.fdf                                                       base64          
 mseed       application/vnd.fdsn.mseed                                                base64          

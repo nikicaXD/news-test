@@ -22,9 +22,9 @@
     </div>
 </div>
 
-<h2>Latest albums</h2>
+<h2>Latest articles</h2>
     <div style="display: flex; flex-direction: column-reverse" >
-    <% @user.albums.each do |a| %>
-        <%= render 'components/albumCard', album: a %>
+    <% @user.articles.each do |a| %>
+        <%= render 'components/articleCard', article: a %>
     <% end %>
 </div>

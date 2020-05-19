@@ -434,9 +434,9 @@ module ActionDispatch
         # and +:action+ to the controller's action. A pattern can also map
         # wildcard segments (globs) to params:
         #
-        #   get 'songs/*category/:title', to: 'songs#show'
+        #   get 'posts/*category/:title', to: 'posts#show'
         #
-        #   # 'songs/rock/classic/stairway-to-heaven' sets
+        #   # 'posts/rock/classic/stairway-to-heaven' sets
         #   #  params[:category] = 'rock/classic'
         #   #  params[:title] = 'stairway-to-heaven'
         #

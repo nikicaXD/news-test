@@ -4,10 +4,10 @@
     <div style="amax-width: 400px; display: flex; flex-direction: row; flex-wrap: wrap" >
     
         <div>
-            <h2>Latest albums</h2>
+            <h2>Latest articles</h2>
             <div style="display: flex; flex-direction: column" >
-            <% @albums.each do |a| %>
-                <%= render 'components/albumCard', album: a %>
+            <% @articles.each do |a| %>
+                <%= render 'components/articleCard', article: a %>
             <% end %>
             </div>
         </div>

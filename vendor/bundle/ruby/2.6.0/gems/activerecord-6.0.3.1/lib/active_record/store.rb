@@ -79,8 +79,8 @@ module ActiveRecord
   # the default accessors (using the same name as the attribute) and calling <tt>super</tt>
   # to actually change things.
   #
-  #   class Song < ActiveRecord::Base
-  #     # Uses a stored integer to hold the volume adjustment of the song
+  #   class Post < ActiveRecord::Base
+  #     # Uses a stored integer to hold the volume adjustment of the post
   #     store :settings, accessors: [:volume_adjustment]
   #
   #     def volume_adjustment=(decibels)

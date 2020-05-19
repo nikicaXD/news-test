@@ -1,10 +1,10 @@
-class Song < ApplicationRecord
+class Post < ApplicationRecord
     has_one_attached :mp3
-    belongs_to :album
+    belongs_to :article
     belongs_to :user
 
-    # has_many :playlist_songs
-    # has_many :playlists, through: :playlist_songs
+    # has_many :playlist_posts
+    # has_many :playlists, through: :playlist_posts
 
     def self.search(query)
         if query

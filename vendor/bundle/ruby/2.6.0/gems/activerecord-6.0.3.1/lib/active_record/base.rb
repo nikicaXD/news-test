@@ -122,8 +122,8 @@ module ActiveRecord #:nodoc:
   # the default accessors (using the same name as the attribute) and calling
   # +super+ to actually change things.
   #
-  #   class Song < ActiveRecord::Base
-  #     # Uses an integer of seconds to hold the length of the song
+  #   class Post < ActiveRecord::Base
+  #     # Uses an integer of seconds to hold the length of the post
   #
   #     def length=(minutes)
   #       super(minutes.to_i * 60)

@@ -1,48 +1,48 @@
 require 'test_helper'
 
-class SongsControllerTest < ActionDispatch::IntegrationTest
+class PostsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @song = songs(:one)
+    @post = posts(:one)
   end
 
   test "should get index" do
-    get songs_url
+    get posts_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_song_url
+    get new_post_url
     assert_response :success
   end
 
-  test "should create song" do
-    assert_difference('Song.count') do
-      post songs_url, params: { song: {  } }
+  test "should create post" do
+    assert_difference('Post.count') do
+      post posts_url, params: { post: {  } }
     end
 
-    assert_redirected_to song_url(Song.last)
+    assert_redirected_to post_url(Post.last)
   end
 
-  test "should show song" do
-    get song_url(@song)
+  test "should show post" do
+    get post_url(@post)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_song_url(@song)
+    get edit_post_url(@post)
     assert_response :success
   end
 
-  test "should update song" do
-    patch song_url(@song), params: { song: {  } }
-    assert_redirected_to song_url(@song)
+  test "should update post" do
+    patch post_url(@post), params: { post: {  } }
+    assert_redirected_to post_url(@post)
   end
 
-  test "should destroy song" do
-    assert_difference('Song.count', -1) do
-      delete song_url(@song)
+  test "should destroy post" do
+    assert_difference('Post.count', -1) do
+      delete post_url(@post)
     end
 
-    assert_redirected_to songs_url
+    assert_redirected_to posts_url
   end
 end

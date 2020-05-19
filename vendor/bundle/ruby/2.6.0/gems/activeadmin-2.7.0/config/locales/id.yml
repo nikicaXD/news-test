@@ -13,7 +13,7 @@ id:
     delete_model: "Hapus %{model}"
     details: "Detail %{model}"
     cancel: "Batal"
-    empty: "Kosong"
+    empty: "Kopost"
     previous: "Sebelumnya"
     next: "Berikutnya"
     download: "Unduh:"
@@ -86,7 +86,7 @@ id:
       author_missing: "Anonim"
       title_content: "Komentar (%{count})"
       errors:
-        empty_text: "Komentar tak bisa disimpan, text tidak boleh dikosongi."
+        empty_text: "Komentar tak bisa disimpan, text tidak boleh dikoposti."
     devise:
       username:
         title: "Username"

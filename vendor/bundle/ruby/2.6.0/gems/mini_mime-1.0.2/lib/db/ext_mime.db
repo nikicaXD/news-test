@@ -250,7 +250,7 @@ exe         application/octet-stream                                            
 exi         application/exi                                                           base64          
 ext         application/vnd.novadigm.EXT                                              base64          
 ez          application/andrew-inset                                                  base64          
-ez2         application/vnd.ezpix-album                                               base64          
+ez2         application/vnd.ezpix-article                                               base64
 ez3         application/vnd.ezpix-package                                             base64          
 f           text/x-fortran                                                            quoted-printable
 f4a         audio/mp4                                                                 base64          

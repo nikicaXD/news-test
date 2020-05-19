@@ -65,6 +65,6 @@ id:
       'true': "bernilai benar"
       'false': "bernilai salah"
       present: "ada"
-      blank: "kosong"
+      blank: "kopost"
       'null': "null"
       not_null: "tidak null"

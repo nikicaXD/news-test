@@ -3,7 +3,7 @@ module Formtastic
     # A select input is used to render a `<select>` tag with a series of options to choose from.
     # It works for both single selections (like a `belongs_to` relationship, or "yes/no" boolean),
     # as well as multiple selections (like a `has_and_belongs_to_many`/`has_many` relationship,
-    # for assigning many genres to a song, for example).
+    # for assigning many genres to a post, for example).
     #
     # This is the default input choice when:
     #

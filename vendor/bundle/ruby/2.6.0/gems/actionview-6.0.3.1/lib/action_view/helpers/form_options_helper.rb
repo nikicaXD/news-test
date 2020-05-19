@@ -57,11 +57,11 @@ module ActionView
     # * <tt>:index</tt> - like the other form helpers, +select+ can accept an <tt>:index</tt> option to manually set the ID used in the resulting output. Unlike other helpers, +select+ expects this
     #   option to be in the +html_options+ parameter.
     #
-    #     select("album[]", "genre", %w[rap rock country], {}, { index: nil })
+    #     select("article[]", "genre", %w[rap rock country], {}, { index: nil })
     #
     #   becomes:
     #
-    #     <select name="album[][genre]" id="album__genre">
+    #     <select name="article[][genre]" id="article__genre">
     #       <option value="rap">rap</option>
     #       <option value="rock">rock</option>
     #       <option value="country">country</option>

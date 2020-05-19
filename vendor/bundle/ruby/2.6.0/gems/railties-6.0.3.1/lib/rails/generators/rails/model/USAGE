@@ -49,9 +49,9 @@ Available field types:
 
     You can also consider `references` as a kind of type. For instance, if you run:
 
-        `rails generate model photo title:string album:references`
+        `rails generate model photo title:string article:references`
 
-    It will generate an `album_id` column. You should generate these kinds of fields when
+    It will generate an `article_id` column. You should generate these kinds of fields when
     you will use a `belongs_to` association, for instance. `references` also supports
     polymorphism, you can enable polymorphism like this:
 

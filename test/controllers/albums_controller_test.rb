@@ -1,48 +1,48 @@
 require 'test_helper'
 
-class AlbumsControllerTest < ActionDispatch::IntegrationTest
+class ArticlesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @album = albums(:one)
+    @article = articles(:one)
   end
 
   test "should get index" do
-    get albums_url
+    get articles_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_album_url
+    get new_article_url
     assert_response :success
   end
 
-  test "should create album" do
-    assert_difference('Album.count') do
-      post albums_url, params: { album: {  } }
+  test "should create article" do
+    assert_difference('Article.count') do
+      post articles_url, params: { article: {  } }
     end
 
-    assert_redirected_to album_url(Album.last)
+    assert_redirected_to article_url(Article.last)
   end
 
-  test "should show album" do
-    get album_url(@album)
+  test "should show article" do
+    get article_url(@article)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_album_url(@album)
+    get edit_article_url(@article)
     assert_response :success
   end
 
-  test "should update album" do
-    patch album_url(@album), params: { album: {  } }
-    assert_redirected_to album_url(@album)
+  test "should update article" do
+    patch article_url(@article), params: { article: {  } }
+    assert_redirected_to article_url(@article)
   end
 
-  test "should destroy album" do
-    assert_difference('Album.count', -1) do
-      delete album_url(@album)
+  test "should destroy article" do
+    assert_difference('Article.count', -1) do
+      delete article_url(@article)
     end
 
-    assert_redirected_to albums_url
+    assert_redirected_to articles_url
   end
 end

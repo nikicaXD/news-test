@@ -3,10 +3,10 @@
     <div style="amax-width: 400px; display: flex; flex-direction: row" >
     
         <div>
-            <h2>Latest albums</h2>
+            <h2>Latest articles</h2>
             <div style="display: flex; flex-direction: column-reverse" >
-            <% @latestAlbums.each do |a| %>
-                <%= render 'components/albumCard', album: a %>
+            <% @latestArticles.each do |a| %>
+                <%= render 'components/articleCard', article: a %>
             <% end %>
             </div>
         </div>

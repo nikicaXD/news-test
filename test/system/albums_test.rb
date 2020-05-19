@@ -1,41 +1,41 @@
 require "application_system_test_case"
 
-class AlbumsTest < ApplicationSystemTestCase
+class ArticlesTest < ApplicationSystemTestCase
   setup do
-    @album = albums(:one)
+    @article = articles(:one)
   end
 
   test "visiting the index" do
-    visit albums_url
-    assert_selector "h1", text: "Albums"
+    visit articles_url
+    assert_selector "h1", text: "Articles"
   end
 
-  test "creating a Album" do
-    visit albums_url
-    click_on "New Album"
+  test "creating a Article" do
+    visit articles_url
+    click_on "New Article"
 
-    click_on "Create Album"
+    click_on "Create Article"
 
-    assert_text "Album was successfully created"
+    assert_text "Article was successfully created"
     click_on "Back"
   end
 
-  test "updating a Album" do
-    visit albums_url
+  test "updating a Article" do
+    visit articles_url
     click_on "Edit", match: :first
 
-    click_on "Update Album"
+    click_on "Update Article"
 
-    assert_text "Album was successfully updated"
+    assert_text "Article was successfully updated"
     click_on "Back"
   end
 
-  test "destroying a Album" do
-    visit albums_url
+  test "destroying a Article" do
+    visit articles_url
     page.accept_confirm do
       click_on "Destroy", match: :first
     end
 
-    assert_text "Album was successfully destroyed"
+    assert_text "Article was successfully destroyed"
   end
 end

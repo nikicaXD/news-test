@@ -1,10 +1,10 @@
-<%= form_with(model: album, local: true) do |form| %>
-  <% if album.errors.any? %>
+<%= form_with(model: article, local: true) do |form| %>
+  <% if article.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(album.errors.count, "error") %> prohibited this album from being saved:</h2>
+      <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
 
       <ul>
-        <% album.errors.full_messages.each do |message| %>
+        <% article.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
@@ -22,11 +22,11 @@
   </div>
 
   <div class="field">
-    <%= form.label "Album cover" %>
+    <%= form.label "Article cover" %>
     <%= form.file_field :cover, required: true %>
   </div>
 
-  <%= render 'components/image', image: @album.cover, size: 100 %>
+  <%= render 'components/image', image: @article.cover, size: 100 %>
 
   <div class="actions">
     <%= form.submit %>
