@@ -188,7 +188,7 @@ GEM
     multi_json (1.14.1)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-x64-mingw32)
@@ -213,7 +213,7 @@ GEM
     polyamorous (2.3.2)
       activerecord (>= 5.2.1)
     public_suffix (4.0.5)
-    puma (4.3.4)
+    puma (5.6.2)
       nio4r (~> 2.0)
     pundit (2.1.0)
       activesupport (>= 3.0.0)
@@ -331,7 +331,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   omniauth-facebook
   pg (>= 0.18, < 2.0)
-  puma (~> 4.1)
+  puma (~> 5.6)
   pundit
   rails (~> 6.0.2, >= 6.0.2.1)
   sass-rails (>= 6)
